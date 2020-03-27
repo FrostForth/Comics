@@ -7,7 +7,8 @@ Created on Thu Mar 26 19:17:30 2020
 Design
 
 1. Import libraries
-    1. pandas
+    1. OS
+    2. pandas
 2. Import datasets
 3. Output table
 """
@@ -30,7 +31,7 @@ m20 = pd.read_csv(os.getcwd()+'\m2020.csv')
 print('| | Prop | Num. Fem. | Num. Not | Total >5| Total|\n|-----|-----|-----|-----|-----|-----|')
 
 #order sets for table
-dfs = [dc14, dc18, dc20, m14, m18, dc20]
+dfs = [dc14, dc18, dc20, m14, m18, m20]
 
 #create new dataframe for graphs
 
