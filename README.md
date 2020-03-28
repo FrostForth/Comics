@@ -88,7 +88,7 @@ The raw data and graphs suggest differences between the groups.
 
 - Two possible explanations
 
-1. Sampling variability
+1. The observed differences in proportions over time and between publishers is a result of random chance
 
 2. There really is a difference in at least one proportion
 
@@ -100,8 +100,19 @@ Initially a chi-squared test for homogeneity will be used, but follow up z inter
 
 No. Since the study is not about finding the population proportions, it would not be appropriate to use an interval. Additionally, a chi-squared test is being used...
 
+Data:
 
-[data table]
+| |dc14|dc18|dc20|m14|m18|m20|
+|---|---|---|---|---|---|---|
+|Fem|1153|3213|3484|1691|3546|3720|
+|Not|2672|7201|7759|4189|8739|9009|
+
+Exp:
+| |dc14|dc18|dc20|m14|m18|m20|
+|---|---|---|---|---|---|---|
+|Fem|1140.3|3104.7|3351.8|1753.0|3662.4|3794.8|
+|Not|2684.7|7309.3|7891.2|4127.0|8622.6|8934.2|
+
 
 Conditions:
 
@@ -110,6 +121,8 @@ alpha = 0.05
 1. We assume each sample is representative of its respective population
 2. All expected counts are >5 [include expected counts table]
 3. We assume each observation is independent of other observations in each sample
+
+![Chi-Squared Test](https://raw.githubusercontent.com/FrostForth/Comics/master/images/chisquare.png)
 
 chi-squared = [(1153 - 1140)^2]/ + [(2672 - 2685)^2]/ + ... = 23.513
 
@@ -122,4 +135,76 @@ Since 0 < .05, we reject the null hypothesis and conclude that we have evidence 
 ![simulation distribution](https://raw.githubusercontent.com/FrostForth/Comics/master/images/sim.png)
 
 p = 0
+
+## Follow-Up Analysis
+
+Assuming all conditions are met for all tests
+
+Cont:
+| |dc14|dc18|dc20|m14|m18|m20|
+|---|---|---|---|---|---|---|
+|Fem|0.141|3.781|5.214|2.190|3.702|1.475|
+|Not|0.060|1.606|2.215|0.930|1.572|0.626|
+
+The three cells with the highest contributions are:
+1. dc2020 female
+2. dc18 female
+3. m18 female
+
+idk how to interpret this lol
+
+### Additional chi-squared by publisher:
+
+- DC
+
+![Chi-square test DC](https://raw.githubusercontent.com/FrostForth/Comics/master/images/chidc.png)
+
+chi-squared = 0.9726
+
+p = 0.615
+
+Since 0.615 > .05, we fail to reject the null hypothesis and conclude that we do not have evidence that the proportion of female characters in DC Comics has changed significantly between the scrapes.
+
+- Marvel
+
+![Chi-square test Marvel](https://raw.githubusercontent.com/FrostForth/Comics/master/images/chimarvel.png)
+
+chi-squared = 0.587
+
+p = 0.7455
+
+Since 0.7455 > .05, we fail to reject the null hypothesis and conclude that we do not have evidence that the proportion of female characters in Marvel Comics has changed significantly between the scrapes.
+
+### Z tests by scrape
+
+- 2014
+
+![z test 2014](https://raw.githubusercontent.com/FrostForth/Comics/master/images/z2014.png)
+
+z = 1.465
+
+p = 0.1429
+
+Since .143 > .05, we fail to reject the null hypothesis and conclude that we do not have evidence that the true proportion of female characters was significantly different between the two publishers in the 2014 scrape.
+
+- 2018
+
+![z test 2018](https://raw.githubusercontent.com/FrostForth/Comics/master/images/z2018.png)
+
+z = 3.264
+
+p = 0.0011
+
+Since .0011 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the true proportion of female characters between the publishers in the 2018 scrape.
+
+- 2020
+
+![z test 2020](https://raw.githubusercontent.com/FrostForth/Comics/master/images/z2020.png)
+
+z = 2.972
+
+p = 0.003
+
+Since .003 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the true proportion of female characters between the publishers in the 2020 scrape.
+
 ## Conclusion
