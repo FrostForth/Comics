@@ -119,4 +119,7 @@ Since 0 < .05, we reject the null hypothesis and conclude that we have evidence 
 
 ## Simulation
 
+![simulation distribution](https://raw.githubusercontent.com/FrostForth/Comics/master/images/sim.png)
+
+p = 0
 ## Conclusion
