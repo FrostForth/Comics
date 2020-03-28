@@ -39,11 +39,31 @@ Since the samples were not randomly sampled, it may not be truly possible to inf
 |dc20|0.3098817041714845|3484|7759|11243|27071|
 |m14|0.28758503401360547|1691|4189|5880|16376|
 |m18|0.2886446886446886|3546|8739|12285|60276|
-|m20|0.29224605232147066|3720|9009|12729|67022|
+|m20|0.3098817041714845|3484|7759|11243|27071|
 
-idk man it doesnt wanna work :(
+[frequency bargraph]
+- All three Marvel groups have a higher total frequency of characters with more than five appearances
+- Although the frequency of nonfemale characters  in groups m18 and m20 are greater than the those in groups dc18 and dc20, the frequency of female characters is roughly similar across all four groups
+- For both publishers, the frequencies of both females and nonfemales increase over time with the frequency of 
 
-On the bar graph, the frequencies look similar across all groups
+[percentage bargraph]
+- All groups seem to have proportions close to .3
+- For both publishers, the proportions seem to increase slightly over time
+- The proportions in all three Marvel groups seem to be lower than the proportion in dc14
+
+[scatterplot]
+First scrape date: 10/13/2014
+Second scrape date: 12/27/2018
+Third scrape date: 3/26/2020
+
+- The increase between the 2014 scrape and the 2018 scrapes are greater than the increase between the 2018 and 2020 scrapes for both publishers
+- The amount of time between the first and second scrapes is about 3.5 times longer than between the second and third scrapes
+- The increase in frequency between the first and third scrapes may not be linear but we do not have enough data to make a conclusion
+
+
+- Based on the graphs,is it likely that the significance test will find statistically significan evidence for the alternative hypothesis?
+
+There seems to be initial evidence that the proportion of female characters varies between each sample, as well as between each publisher and scrape.
 
 ## Significance Test
 
