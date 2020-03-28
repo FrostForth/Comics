@@ -128,6 +128,8 @@ chi-squared = [(1153 - 1140)^2]/ + [(2672 - 2685)^2]/ + ... = 23.513
 
 p-value = 0.0002692
 
+Assuming there is no difference in proportions between the six populations, there is a 0.00027 chance that the observed chi-squared value of 23.513 would occure by random chance.
+
 Since 0 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the proportion of female characters in at least one population.
 
 ## Simulation
@@ -208,3 +210,30 @@ p = 0.003
 Since .003 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the true proportion of female characters between the publishers in the 2020 scrape.
 
 ## Conclusion
+
+- Conclusion of tests
+
+The initial test found evidence of statistically significant differences in the proportion of females in the six populations. Upon further analysis, we discovered that there was not statistically significant evidence that the proportion had changed over time. However, there is statistically significant evidence that the proportion of female characters is different between the publishers in both 2018 and 2020.
+
+- Possible error (in initial test only)
+
+A type I error may have occurred in this test. This would mean that we found evidence that at least one proportion is significantly different when in reality, the proportions were not significantly different. This would lead to unnecessary follow-up analysis.
+
+- Population
+
+We can generalize the results to all characters recorded in the Marvel and DC wikis.
+
+- Cause and Effect?
+
+Since this is an observational study and not an experiment, we cannot infer a cause-and-effect relationship.
+
+- Advice
+
+1. Pacing bc big project
+2. Do research on what needs to be built beforehand
+3. Do something that will maybe be helpful on the test :/
+
+- Improvements / Further Study
+
+1. regression using only 2020 results and first appearance dates
+2. idk ill think of smth later lol
