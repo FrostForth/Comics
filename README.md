@@ -69,6 +69,54 @@ There seems to be initial evidence that the proportion of female characters vari
 
 ## Significance Test
 
+- Hypotheses:
+
+Parameter: pi = the true proportion of female characters from scrape i
+
+H0: There is no difference in proportions between the six populations
+
+HA: At least one proportion is significantly different between the six populations
+
+<details>
+<summary> Follow-up Testing </summary>
+idk lol (its too much work to put here lmao)
+</details>
+
+- Initial Evidence
+
+The raw data and graphs suggest differences between the groups.
+
+- Two possible explanations
+
+1. Sampling variability
+
+2. There really is a difference in at least one proportion
+
+- Type of Significance Test:
+
+Initially a chi-squared test for homogeneity will be used, but follow up z interval tests for proportions will be used if necessary.
+
+- Is a confidence interval appropriate?
+
+No. Since the study is not about finding the population proportions, it would not be appropriate to use an interval. Additionally, a chi-squared test is being used...
+
+
+[data table]
+
+Conditions:
+
+alpha = 0.05
+
+1. We assume each sample is representative of its respective population
+2. All expected counts are >5 [include expected counts table]
+3. We assume each observation is independent of other observations in each sample
+
+chi-squared = [(1153 - 1140)^2]/ + [(2672 - 2685)^2]/ + ... = 23.513
+
+p-value = 0.0002692
+
+Since 0 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the proportion of female characters in at least one population.
+
 ## Simulation
 
 ## Conclusion
