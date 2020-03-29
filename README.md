@@ -1,3 +1,5 @@
+The project paper is contained in Project.pdf
+
 # Question
 
 Is the proportion of female characters in Marvel and DC Comics different between the three scrape dates and between the publishers?
