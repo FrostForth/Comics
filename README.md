@@ -1,16 +1,19 @@
 # Question
 
-Has the proportion of female characters changed since the original data was gathered and when I first scraped it for each Marvel and DC Comics, and is the proportion for each respective set of data different for each company?
+Is the proportion of female characters in Marvel and DC Comics different between the three scrape dates and between the publishers?
+- Is there a difference in the proportion of female characters between the original scrape in 2015, when I first scraped it in 2017, and when I scraped it for the project?
+- Is the proportion of female characters in Marvel Comics different from the proportion in DC Comics for each of the above time periods?
+
 
 ## Design
 
 - Why were you interested in this question?
 
-I was inspired by a [528 article](https://fivethirtyeight.com/features/women-in-comic-books/) I found when I was first starting out in data science a few years ago that analyzed diversity in characters in Marvel and DC Comics. I found the article and the data it used particularly interesting at the time but did not know how to conduct my own research on the topic so I was unable to do much with the additional data I collected. Now that I have a better understanding of statistics, however, I have decided to perform my own analysis on the topic for this project.
+I was inspired by a [FiveThirtyEight article](https://fivethirtyeight.com/features/women-in-comic-books/) I found when I was first starting out in data science a few years ago that analyzed diversity in characters in Marvel and DC Comics. I found the article and the data it used particularly interesting at the time but did not know how to conduct my own research on the topic so I was unable to do much with the additional data I collected. Now that I have a better understanding of statistics, however, I have decided to perform my own analysis on the topic for this project.
 
 - How did you collect the data?
 
-Each scrape collected data on all characters on the respective wiki pages on the given date. The first scrape, on August 24, 2014, was [linked to the article](https://github.com/fivethirtyeight/data/tree/master/comic-characters) and I performed the additional scrapes December 27, 2018 and August 26, 2020. Once this data was collected, I took a sample of all characters with more than five appearances. This is to reduce bias resulting from characters with multiple entries due to their presence in multiple universes. The alternate versions of these characters are more likely to have appeared in special series or one-offs and would therefore be not as likely to be in the sample. Also, since the wiki pages are user-submitted less popular characters with less appearances may not have accurate data. From these samples, the number of female characters was recorded.
+Each scrape collected data on all characters on the respective wiki pages on the given date. The first scrape, on August 24, 2014, was [linked to the article](https://github.com/fivethirtyeight/data/tree/master/comic-characters) and I performed the additional scrapes December 27, 2018 and March 26, 2020. Once this data was collected, I took a sample of all characters with more than five appearances. This is to reduce bias resulting from characters with multiple entries due to their presence in multiple universes. The alternate versions of these characters are more likely to have appeared in special series or one-offs and would therefore be not as likely to be in the sample. Also, since the wiki pages are user-submitted less popular characters with fewer appearances may not have accurate data. From these samples, the number of female characters was recorded.
 
 - What are the explanatory and response variables?
 
@@ -147,7 +150,7 @@ The three cells with the highest contributions are:
 2. dc18 female
 3. m18 female
 
-idk how to interpret this lol
+This suggests that the most successful tests will be the DC chi-squared test and the z tests for 2018 and 2020.
 
 ### Additional chi-squared by publisher:
 
