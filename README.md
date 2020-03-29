@@ -25,7 +25,7 @@ Since the study period does not extend into the future and there are no experime
 
 - What are possible limitations in your design and how could you address these?
 
-Since the samples were not randomly sampled, it may not be truly possible to infer the study's results to the population. However, random sampling cannot be used in this case, as many of the samples would have overlapping data. This also means that the individuals in the dataset from the same publisher are not independent. Therefore, we must merely assume that each sample of characters with more than 5 appearances is representative of all chararacters in their respective population.
+Since the samples were not randomly sampled, it may not be truly possible to infer the study's results to the population. However, random sampling cannot be used in this case, as many of the samples would have overlapping data. This also means that the individuals in the dataset from the same publisher are not independent. Therefore, we must merely assume that each sample of characters with more than 5 appearances is representative of all characters in their respective population.
 
 ## Data
 
@@ -125,7 +125,7 @@ chi-squared = [(1153 - 1140)^2]/ + [(2672 - 2685)^2]/ + ... = 23.513
 
 p-value = 0.0002692
 
-Assuming there is no difference in proportions between the six populations, there is a 0.00027 chance that the observed chi-squared value of 23.513 would occure by random chance.
+Assuming there is no difference in proportions between the six populations, there is a 0.00027 chance that the observed chi-squared value of 23.513 would occur by random chance.
 
 Since 0 < .05, we reject the null hypothesis and conclude that we have evidence that there is a significant difference in the proportion of female characters in at least one population.
 
